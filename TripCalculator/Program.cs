@@ -1,0 +1,10 @@
+﻿Console.WriteLine("How many miles is the trip both ways? ");
+double milesForTheTrip = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("What is the miles per gallon of the car during the trip? ");
+double milesPerGallon = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("How much is the Price per gallon of gas? ");
+double price = Convert.ToDouble(Console.ReadLine());
+double gallonsNeeded = milesForTheTrip/milesPerGallon;
+double fuelCost = gallonsNeeded * price;
+System.Console.WriteLine("Gallons needed: " + gallonsNeeded.ToString("F2"));
+System.Console.WriteLine("Fuel cost: " + fuelCost.ToString("C"));
